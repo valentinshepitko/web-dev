@@ -1,0 +1,43 @@
+.testimonials{
+
+  &__square{
+    background-color: #F2F2F2;
+    max-width: 892px;
+    height: 540px;
+    margin: 0 auto;
+  }
+
+  &__column-holder{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  &__column{
+    max-width: 380px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 100px 80px rgba(49, 49, 49, 0.1);
+  }
+
+  &__column-content{
+    padding-left: 32px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &__heading{
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    color: #32435C;
+  }
+
+  &__text{
+    max-width: 325px;
+    line-height: 30px;
+  }
+
+  &__rate{
+    padding-bottom: 20px;
+  }
+}

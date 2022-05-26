@@ -1,0 +1,59 @@
+.work{
+
+  padding-bottom: 150px;
+
+  &__title-holder{
+    text-align: center;
+    padding-bottom: 80px;
+  }
+
+  &__subtitle{
+    font-size: 18px;
+    padding-bottom: 30px;
+  }
+
+  &__title{
+    font-size: 45px;
+    font-weight: 500;
+  }
+
+  &__column-holder{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+
+  &__column{
+    max-width: 480px;
+  }
+
+  &__image-holder{
+    padding-bottom: 24px;
+  }
+
+ &__column-title-holder{
+   display: flex;
+   justify-content: space-between;
+ }
+
+  &__column-title{
+    font-size: 28px;
+  }
+
+  &__link{
+    font-size: 18px;
+    color: $green;
+    padding-top: 8px
+  }
+
+  &__column-down{
+    padding-top: 50px;
+  }
+
+  &__button-holder{
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+  }
+}
