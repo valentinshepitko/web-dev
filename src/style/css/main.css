@@ -256,6 +256,9 @@ img {
   justify-content: center;
 }
 
+.testimonials {
+  padding-bottom: 150px;
+}
 .testimonials__square {
   background-color: #F2F2F2;
   max-width: 892px;
@@ -289,5 +292,75 @@ img {
 }
 .testimonials__rate {
   padding-bottom: 20px;
+}
+
+.pricing {
+  padding-bottom: 150px;
+}
+.pricing__title-holder {
+  text-align: center;
+  padding-bottom: 80px;
+}
+.pricing__subtitle {
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+.pricing__title {
+  font-size: 45px;
+  font-weight: 500;
+}
+.pricing__column-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px;
+}
+.pricing__column {
+  max-width: 362px;
+  border: 1px solid #EDEDED;
+  border-radius: 5px;
+}
+.pricing__column-content {
+  padding: 50px 50px 50px 50px;
+}
+.pricing__heading {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.pricing__price {
+  font-size: 60px;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+  padding-bottom: 25px;
+}
+.pricing__price-custom {
+  font-size: 60px;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 25px;
+}
+.pricing__list {
+  padding-bottom: 50px;
+}
+.pricing__list-item {
+  padding-bottom: 16px;
+}
+.pricing__button-holder {
+  text-align: center;
+}
+.pricing__button {
+  border: 1px solid #514040;
+  padding: 20px 55px;
+  font-size: 18px;
+  color: #313131;
+}
+.pricing__button:hover {
+  background-color: #49AD09;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */

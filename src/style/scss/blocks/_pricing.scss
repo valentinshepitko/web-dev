@@ -1,0 +1,83 @@
+.pricing{
+  padding-bottom: 150px;
+
+  &__title-holder{
+    text-align: center;
+    padding-bottom: 80px;
+  }
+
+  &__subtitle{
+    font-size: 18px;
+    padding-bottom: 30px;
+  }
+
+  &__title{
+    font-size: 45px;
+    font-weight: 500;
+  }
+
+  &__column-holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 45px;
+  }
+
+  &__column{
+    max-width: 362px;
+    border: 1px solid #EDEDED;
+    border-radius: 5px;
+  }
+
+  &__column-content{
+    padding: 50px 50px 50px 50px;
+  }
+
+  &__heading{
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  &__price{
+    font-size: 60px;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding-bottom: 25px;
+  }
+
+  &__price-custom{
+    font-size: 60px;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 25px;
+  }
+
+  &__list{
+    padding-bottom: 50px;
+  }
+
+  &__list-item{
+    padding-bottom: 16px;
+  }
+
+  &__button-holder{
+    text-align: center;
+  }
+
+  &__button{
+    border: 1px solid #514040;
+    padding: 20px 55px;
+    font-size: 18px;
+    color: $black;
+
+    &:hover{
+      background-color: $green;
+      color: white;
+    }
+  }
+}
