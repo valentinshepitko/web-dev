@@ -27,10 +27,19 @@
     max-width: 362px;
     border: 1px solid #EDEDED;
     border-radius: 5px;
+
+    &:hover{
+      box-shadow: 0 100px 80px rgba(49, 49, 49, 0.1);
+    }
   }
 
   &__column-content{
     padding: 50px 50px 50px 50px;
+  }
+
+  &__list-holder-add{
+    padding-top: 20px;
+    padding-bottom: 50px;
   }
 
   &__heading{
