@@ -256,9 +256,6 @@ img {
   justify-content: center;
 }
 
-.testimonials {
-  padding-bottom: 150px;
-}
 .testimonials__square {
   background-color: #F2F2F2;
   max-width: 892px;
@@ -269,6 +266,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+  position: relative;
+  bottom: 400px;
 }
 .testimonials__column {
   max-width: 380px;
@@ -361,7 +360,7 @@ img {
 .pricing__list-item:before {
   position: absolute;
   content: "";
-  background-image: url("../../../../src/img/checkmark.svg");
+  background-image: url("../../../src/img/checkmark.svg");
   background-size: 12px 12px;
   width: 12px;
   height: 12px;

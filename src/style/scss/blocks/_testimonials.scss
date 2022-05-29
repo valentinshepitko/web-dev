@@ -1,6 +1,5 @@
 .testimonials{
 
-  padding-bottom: 150px;
 
   &__square{
     background-color: #F2F2F2;
@@ -13,6 +12,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+    position: relative;
+    bottom: 400px;
   }
 
   &__column{
