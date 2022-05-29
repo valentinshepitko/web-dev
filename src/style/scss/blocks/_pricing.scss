@@ -38,8 +38,8 @@
   }
 
   &__list-holder-add{
-    padding-top: 20px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 40px;
   }
 
   &__heading{
@@ -72,6 +72,19 @@
 
   &__list-item{
     padding-bottom: 16px;
+    position: relative;
+
+
+    &:before{
+      position: absolute;
+      content: '';
+      background-image: url('../../../../src/img/checkmark.svg');
+      background-size: 12px 12px;
+      width: 12px;
+      height: 12px;
+      top: 4px;
+      left: -20px;
+    }
   }
 
   &__button-holder{

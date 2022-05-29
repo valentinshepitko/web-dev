@@ -54,4 +54,15 @@
   &__main-link-holder{
     padding-bottom: 37px;
   }
+
+  &__line{
+    border-bottom: 1px solid #EDEDED;
+    padding-top: 45px;
+  }
+
+  &__copyright{
+    padding-top: 40px;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
