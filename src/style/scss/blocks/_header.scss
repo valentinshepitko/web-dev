@@ -6,6 +6,12 @@
     padding-bottom: 188px;
   }
 
+  &__nav-holder{
+    @include breakpoint('lg') {
+      padding-left: 30px;
+    }
+  }
+
   &__nav{
     display: flex;
     flex-wrap: wrap;

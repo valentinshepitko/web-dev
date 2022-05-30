@@ -9,6 +9,7 @@
     text-align: center;
   }
 
+
   &__title{
     margin: 0 auto;
     font-family: Inter, sans-serif;
@@ -35,12 +36,28 @@
 
   &__button-holder{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 35px;
   }
 
   &__video-button{
     color: $black;
+    position: relative;
 
+    &:before{
+      position: absolute;
+      content: '';
+      background-image: url('../../../../src/img/playbutton.svg');
+      background-size: 9px 12px;
+      top: 5px;
+      left: 105px;
+      width: 9px;
+      height: 12px;
+    }
+
+    &:hover{
+      color: $green;
+    }
   }
 }

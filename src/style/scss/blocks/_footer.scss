@@ -13,6 +13,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @include breakpoint('lg') {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 
   &__button-holder{
@@ -36,7 +41,7 @@
     gap: 15px;
   }
 
-  &__link-main{
+  &__link-item-main{
     color: $black;
     font-size: 20px;
     font-weight: 600;
@@ -45,6 +50,7 @@
 
   &__link-item{
     padding-bottom: 30px;
+    font-weight: 600;
   }
 
   &__link{
@@ -55,6 +61,42 @@
     padding-bottom: 37px;
   }
 
+  &__link-holder{
+    padding-bottom: 37px;
+  }
+
+  &__link-main{
+    color: $black;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  &__label{
+
+    position: relative;
+
+    &:after{
+      position: absolute;
+      content: '';
+      background-image: url('../../../../src/img/arrow.svg');
+      background-size: 16px 16px;
+      width: 16px;
+      height: 16px;
+      top: 4px;
+      left: 145px;
+    }
+  }
+
+  &__input{
+    background: #F2F2F2;
+    border-radius: 4px;
+    width: 174px;
+    height: 40px;
+    padding-left: 12px;
+    border-style: none;
+    color: $black;
+  }
+
   &__line{
     border-bottom: 1px solid #EDEDED;
     padding-top: 45px;
@@ -62,7 +104,9 @@
 
   &__copyright{
     padding-top: 40px;
+    padding-bottom: 40px;
     margin: 0 auto;
     text-align: center;
+    font-weight: 500;
   }
 }

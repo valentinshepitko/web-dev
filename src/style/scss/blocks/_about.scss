@@ -19,6 +19,7 @@
 
   &__specialization-column-holder{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
     padding-bottom: 40px;
@@ -41,6 +42,7 @@
 
   &__column-headline{
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     padding-bottom: 20px;
   }
@@ -72,6 +74,7 @@
   &__button-holder{
     padding-top: 80px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
 }
