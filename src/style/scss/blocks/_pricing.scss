@@ -21,6 +21,16 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 45px;
+
+    @include breakpoint('md') {
+      width: 60%;
+      margin: 0 auto;
+    }
+
+    @include breakpoint('lg') {
+      width: 60%;
+      margin: 0 auto;
+    }
   }
 
   &__column{

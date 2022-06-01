@@ -31,11 +31,3 @@ $grid-breakpoints: (
   }
 }
 
-// mixin for CAPSLOCK text
-@mixin capslock-text {
-  font-family: karla,sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
