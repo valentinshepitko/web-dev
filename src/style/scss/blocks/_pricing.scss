@@ -84,7 +84,6 @@
     padding-bottom: 16px;
     position: relative;
 
-
     &:before{
       position: absolute;
       content: '';
@@ -106,6 +105,11 @@
     padding: 20px 55px;
     font-size: 18px;
     color: $black;
+
+    @include breakpoint('xs') {
+      font-size: 13px;
+      padding: 20px 30px;
+    }
 
     &:hover{
       background-color: $green;

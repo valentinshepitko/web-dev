@@ -33,10 +33,23 @@
     padding-bottom: 24px;
   }
 
+  &__image{
+
+    @include breakpoint('xs') {
+      width: 280px;
+      margin: 0 auto;
+    }
+  }
+
  &__column-title-holder{
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
+
+   @include breakpoint('xs') {
+     width: 75%;
+     margin: 0 auto;
+   }
  }
 
   &__column-title{

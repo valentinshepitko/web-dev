@@ -159,10 +159,18 @@ img {
   padding-top: 83px;
   padding-bottom: 150px;
 }
-.partners__image-holder {
+.partners__holder {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
+  gap: 130px;
+}
+@media (max-width: 1024px) {
+  .partners__holder {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .about {
@@ -260,10 +268,22 @@ img {
 .work__image-holder {
   padding-bottom: 24px;
 }
+@media (max-width: 568px) {
+  .work__image {
+    width: 280px;
+    margin: 0 auto;
+  }
+}
 .work__column-title-holder {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 568px) {
+  .work__column-title-holder {
+    width: 75%;
+    margin: 0 auto;
+  }
 }
 .work__column-title {
   font-size: 28px;
@@ -305,22 +325,7 @@ img {
   height: 540px;
   margin: 0 auto;
 }
-@media (max-width: 640px) {
-  .testimonials__square {
-    display: none;
-  }
-}
-@media (max-width: 768px) {
-  .testimonials__square {
-    display: none;
-  }
-}
-@media (max-width: 1024px) {
-  .testimonials__square {
-    display: none;
-  }
-}
-@media (max-width: ) {
+@media (max-width: 1200px) {
   .testimonials__square {
     display: none;
   }
@@ -333,36 +338,11 @@ img {
   bottom: 400px;
   left: 33px;
 }
-@media (max-width: 640px) {
-  .testimonials__column-holder {
-    width: 60%;
-    left: 120px;
-    top: -20px;
-    padding-bottom: 130px;
-  }
-}
-@media (max-width: 768px) {
-  .testimonials__column-holder {
-    width: 60%;
-    left: 205px;
-    top: -20px;
-    padding-bottom: 130px;
-  }
-}
-@media (max-width: 1024px) {
-  .testimonials__column-holder {
-    width: 60%;
-    left: 190px;
-    top: -20px;
-    padding-bottom: 110px;
-  }
-}
 @media (max-width: 1200px) {
   .testimonials__column-holder {
-    width: 60%;
-    left: 380px;
-    top: -20px;
-    padding-bottom: 150px;
+    width: 40%;
+    margin: 0 auto;
+    top: 20px;
   }
 }
 .testimonials__column {
@@ -483,6 +463,12 @@ img {
   padding: 20px 55px;
   font-size: 18px;
   color: #313131;
+}
+@media (max-width: 568px) {
+  .pricing__button {
+    font-size: 13px;
+    padding: 20px 30px;
+  }
 }
 .pricing__button:hover {
   background-color: #49AD09;
