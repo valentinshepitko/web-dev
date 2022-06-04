@@ -12,7 +12,6 @@
     height: 540px;
     margin: 0 auto;
 
-
     @include breakpoint('xl') {
       display: none;
     }
@@ -20,14 +19,19 @@
 
   &__column-holder{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
     position: relative;
     bottom: 400px;
-    left: 33px;
 
-    @include breakpoint('xl') {
-      width: 40%;
+
+    @include breakpoint('xs') {
+      width: 100%;
+    }
+
+    @include breakpoint('lg') {
+      width: 80%;
       margin: 0 auto;
       top: 20px;
     }
@@ -38,25 +42,39 @@
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 100px 80px rgba(49, 49, 49, 0.1);
+
+    @include breakpoint('xs') {
+      max-width: 280px;
+    }
   }
-
-
 
   &__column-content{
     padding-left: 32px;
     padding-top: 40px;
     padding-bottom: 40px;
+
+    @include breakpoint('xs') {
+      padding-right: 20px;
+    }
   }
 
   &__heading{
     font-family: Inter, sans-serif;
     font-weight: 600;
     color: #32435C;
+
+    @include breakpoint('xs') {
+      font-size: 13px;
+    }
   }
 
   &__text{
     max-width: 325px;
     line-height: 30px;
+
+    @include breakpoint('xs') {
+      font-size: 11px;
+    }
   }
 
   &__rate{

@@ -17,6 +17,10 @@
     font-size: 78px;
     max-width: 772px;
     padding-bottom: 36px;
+
+    @include breakpoint('xs') {
+      font-size: 61px;
+    }
   }
 
   &__title-green{

@@ -118,6 +118,11 @@ img {
   max-width: 772px;
   padding-bottom: 36px;
 }
+@media (max-width: 568px) {
+  .hero__title {
+    font-size: 61px;
+  }
+}
 .hero__title-green {
   color: #49AD09;
 }
@@ -199,9 +204,7 @@ img {
   max-width: 384px;
   border: 1px solid #EDEDED;
   border-radius: 5px;
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-bottom: 40px;
+  padding: 40px 25px 40px 40px;
 }
 .about__specialization-column:hover {
   box-shadow: 0 100px 80px rgba(49, 49, 49, 0.1);
@@ -223,6 +226,11 @@ img {
   line-height: 147.9%;
   font-size: 18px;
   font-weight: 500;
+}
+@media (max-width: 568px) {
+  .about__column-text {
+    font-size: 16px;
+  }
 }
 .about__column-link {
   color: #313131;
@@ -332,15 +340,20 @@ img {
 }
 .testimonials__column-holder {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 15px;
   position: relative;
   bottom: 400px;
-  left: 33px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 568px) {
   .testimonials__column-holder {
-    width: 40%;
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .testimonials__column-holder {
+    width: 80%;
     margin: 0 auto;
     top: 20px;
   }
@@ -351,19 +364,39 @@ img {
   border-radius: 5px;
   box-shadow: 0 100px 80px rgba(49, 49, 49, 0.1);
 }
+@media (max-width: 568px) {
+  .testimonials__column {
+    max-width: 280px;
+  }
+}
 .testimonials__column-content {
   padding-left: 32px;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+@media (max-width: 568px) {
+  .testimonials__column-content {
+    padding-right: 20px;
+  }
 }
 .testimonials__heading {
   font-family: Inter, sans-serif;
   font-weight: 600;
   color: #32435C;
 }
+@media (max-width: 568px) {
+  .testimonials__heading {
+    font-size: 13px;
+  }
+}
 .testimonials__text {
   max-width: 325px;
   line-height: 30px;
+}
+@media (max-width: 568px) {
+  .testimonials__text {
+    font-size: 11px;
+  }
 }
 .testimonials__rate {
   padding-bottom: 20px;
@@ -510,6 +543,11 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+}
+@media (max-width: 568px) {
+  .footer__social-icon-holder {
+    padding-bottom: 45px;
+  }
 }
 .footer__link-item-main {
   color: #313131;
