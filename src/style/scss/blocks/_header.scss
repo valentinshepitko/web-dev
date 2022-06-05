@@ -1,14 +1,24 @@
 .header{
+  position: relative;
 
+  &:active{
+    .header__nav-list{
+      transform: translateX(0);
+    }
+  }
 
   &__holder{
     padding-top: 50px;
     padding-bottom: 188px;
   }
 
-  &__nav-holder{
+  &__logo-holder{
     @include breakpoint('lg') {
-      padding-left: 30px;
+      padding-left: 40px;
+    }
+
+    @include breakpoint('xl') {
+      padding-left: 40px;
     }
   }
 
@@ -27,10 +37,29 @@
   &__nav-list{
     display: flex;
     flex-wrap: wrap;
+
+    @include breakpoint('lg') {
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      z-index: 2;
+      background-color: white;
+      padding-top: 60px;
+      height: 100vh;
+      transform: translateX(100%);
+      transition: all ease-in-out 0.3s;
+    }
   }
 
   &__nav-item{
     padding-right: 50px;
+
+    @include breakpoint('lg') {
+      margin: 0 auto;
+      padding-right: 0;
+    }
   }
 
   &__nav-link{
@@ -39,6 +68,13 @@
 
     &:hover{
     color: $green;
+    }
+
+    @include breakpoint('lg') {
+      text-align: center;
+      display: block;
+      padding: 20px;
+      margin-bottom: 30px;
     }
   }
 
@@ -56,4 +92,26 @@
       color: $green;
     }
   }
+
+  &__burger{
+    display: none;
+    cursor: pointer;
+    z-index: 3;
+
+    @include breakpoint('lg') {
+      display: block;
+      position: absolute;
+      right: 35px;
+      top: 46px;
+    }
+  }
+
+  &__burger-bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: $black;
+ }
 }
