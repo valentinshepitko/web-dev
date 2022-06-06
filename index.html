@@ -6,7 +6,8 @@
     <title>Web.Dev</title>
     <link rel="stylesheet" href="src/font/stylesheet.css">
     <link rel="stylesheet" href="src/style/css/main.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
             crossorigin="anonymous"></script>
     <script src="src/js/main.js"></script>
@@ -14,11 +15,10 @@
 <body>
 <!--Header-->
 <header class="header">
-    <div class="container">
-        <div class="header__holder">
+    <div class="container flex-container">
+            <div class="header__logo-holder"><a href="#" class="header__logo">Web.Dev</a></div>
             <div class="header__nav-holder">
                 <nav class="header__nav">
-                    <div class="header__logo-holder"><a href="#" class="header__logo-link"><span class="header__logo">Web.Dev</span></a></div>
                         <ul class="header__nav-list">
                             <li class="header__nav-item"><a href="#" class="header__nav-link">Home</a></li>
                             <li class="header__nav-item"><a href="#" class="header__nav-link">About</a></li>
@@ -28,13 +28,12 @@
                             <li class="header__nav-item"><a href="#" class="header__nav-link-green">Sign Up</a></li>
                         </ul>
                 </nav>
-                <div class="header__burger">
-                    <span class="header__burger-bar"></span>
-                    <span class="header__burger-bar header__burger-bar-hide"></span>
-                    <span class="header__burger-bar"></span>
-                </div>
             </div>
-        </div>
+            <div class="header__burger">
+                <span class="header__burger-bar"></span>
+                <span class="header__burger-bar"></span>
+                <span class="header__burger-bar"></span>
+            </div>
     </div>
 </header>
 <main class="main">

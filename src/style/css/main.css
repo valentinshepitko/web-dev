@@ -39,6 +39,13 @@ img {
   padding: 0 10px;
 }
 
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .button-green {
   width: 225px;
   background-color: #49AD09;
@@ -55,13 +62,24 @@ img {
 
 .header {
   position: relative;
+  padding: 58px 0 58px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  background-color: white;
 }
-.header:active .header__nav-list {
+.header.active .header__nav {
   transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
 }
 .header__holder {
   padding-top: 50px;
   padding-bottom: 188px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 @media (max-width: 1024px) {
   .header__logo-holder {
@@ -73,15 +91,24 @@ img {
     padding-left: 40px;
   }
 }
-.header__nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-.header__logo-link {
+.header__logo {
   font-size: 18px;
   color: #313131;
+}
+@media (max-width: 1024px) {
+  .header__nav {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+    transform: translateX(100%);
+    transition: all ease-in-out 0.3s;
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 .header__nav-list {
   display: flex;
@@ -89,17 +116,9 @@ img {
 }
 @media (max-width: 1024px) {
   .header__nav-list {
+    display: flex;
     flex-direction: column;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    z-index: 2;
-    background-color: white;
-    padding-top: 60px;
-    height: 100vh;
-    transform: translateX(100%);
-    transition: all ease-in-out 0.3s;
+    padding: 80px 0;
   }
 }
 .header__nav-item {
@@ -108,7 +127,8 @@ img {
 @media (max-width: 1024px) {
   .header__nav-item {
     margin: 0 auto;
-    padding-right: 0;
+    padding: 0;
+    width: 100%;
   }
 }
 .header__nav-link {
@@ -139,17 +159,25 @@ img {
   background-color: white;
   color: #49AD09;
 }
+@media (max-width: 1024px) {
+  .header__nav-link-green {
+    text-align: center;
+    display: block;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+}
 .header__burger {
   display: none;
   cursor: pointer;
-  z-index: 3;
 }
 @media (max-width: 1024px) {
   .header__burger {
     display: block;
     position: absolute;
     right: 35px;
-    top: 46px;
+    top: 55px;
+    z-index: 4;
   }
 }
 .header__burger-bar {
@@ -166,6 +194,7 @@ img {
   background: rgb(255, 255, 255);
   background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(242, 242, 242) 100%);
   padding-bottom: 360px;
+  padding-top: 270px;
 }
 .hero__holder {
   margin: 0 auto;
