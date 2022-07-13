@@ -8,20 +8,38 @@
   background-color: white;
 
   &.active{
+
     .header__nav{
       transform: translateX(0);
       opacity: 1;
       visibility: visible;
     }
+    .header__burger {
+      span {
+        display: none;
+      }
+
+      &::before {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -72%) rotate(45deg);
+      }
+
+      &::after {
+        bottom: 43%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
   }
 
-  &__holder{
-    padding-top: 50px;
-    padding-bottom: 188px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+  //&__holder{
+  //  padding-top: 50px;
+  //  padding-bottom: 188px;
+  //  display: flex;
+  //  flex-wrap: wrap;
+  //  justify-content: space-between;
+  //}
 
   &__logo-holder{
     @include breakpoint('lg') {
@@ -39,13 +57,13 @@
   }
 
   &__nav{
-    @include breakpoint('lg') {
+    @include breakpoint('md') {
       flex-direction: column;
       position: absolute;
       top: 0;
       right: 0;
       width: 100%;
-      //height: 100vh;
+      height: 100vh;
       z-index: 2;
       background-color: white;
       transform: translateX(100%);
@@ -59,7 +77,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    @include breakpoint('lg') {
+    @include breakpoint('md') {
       display: flex;
       flex-direction: column;
       padding: 80px 0;
@@ -69,7 +87,7 @@
   &__nav-item{
     padding-right: 50px;
 
-    @include breakpoint('lg') {
+    @include breakpoint('md') {
       margin: 0 auto;
       padding: 0;
       width: 100%;
@@ -84,7 +102,7 @@
     color: $green;
     }
 
-    @include breakpoint('lg') {
+    @include breakpoint('md') {
       text-align: center;
       display: block;
       padding: 20px;
@@ -106,33 +124,65 @@
       color: $green;
     }
 
-    @include breakpoint('lg') {
+    @include breakpoint('md') {
+      margin: 0 auto;
       text-align: center;
       display: block;
-      padding: 20px;
-      margin-bottom: 30px;
+      padding: 15px;
     }
   }
 
   &__burger{
     display: none;
-    cursor: pointer;
 
-    @include breakpoint('lg') {
+    @include breakpoint('md') {
       display: block;
       position: absolute;
-      right: 35px;
-      top: 55px;
-      z-index: 4;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 30px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      z-index: 6;
     }
-  }
 
-  &__burger-bar{
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    transition: all 0.3s ease-in-out;
-    background-color: $black;
- }
+    &::before {
+      content: '';
+      width: 30px;
+      height: 4px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: black;
+      transition: all ease-in-out 0.3s;
+    }
+
+    &::after {
+      content: '';
+      width: 30px;
+      height: 4px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: black;
+      transition: all ease-in-out 0.3s;
+    }
+
+    span {
+      width: 30px;
+      height: 4px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: black;
+      transition: all ease-in-out 0.3s;
+    }
+}
 }
