@@ -6,14 +6,13 @@
   padding-top: 270px;
 
   @include breakpoint('md') {
-    padding-top: 50px;
+    padding-top: 85px;
   }
 
   &__holder{
     margin: 0 auto;
     text-align: center;
   }
-
 
   &__title{
     margin: 0 auto;

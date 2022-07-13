@@ -1,11 +1,15 @@
 .header{
-  position: relative;
+  position: fixed;
   padding: 58px 0 58px;
   top: 0;
   left: 0;
   right: 0;
   z-index: 5;
   background-color: white;
+
+  @include breakpoint('lg') {
+    padding: 58px 0 65px;
+  }
 
   &.active{
 
@@ -32,14 +36,6 @@
       }
     }
   }
-
-  //&__holder{
-  //  padding-top: 50px;
-  //  padding-bottom: 188px;
-  //  display: flex;
-  //  flex-wrap: wrap;
-  //  justify-content: space-between;
-  //}
 
   &__logo-holder{
     @include breakpoint('lg') {
@@ -184,5 +180,5 @@
       background-color: black;
       transition: all ease-in-out 0.3s;
     }
-}
+  }
 }
