@@ -5,10 +5,6 @@
   padding-bottom: 360px;
   padding-top: 270px;
 
-  @include breakpoint('md') {
-    padding-top: 85px;
-  }
-
   &__holder{
     margin: 0 auto;
     text-align: center;

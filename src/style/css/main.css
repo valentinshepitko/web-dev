@@ -238,11 +238,6 @@ img {
   padding-bottom: 360px;
   padding-top: 270px;
 }
-@media (max-width: 768px) {
-  .hero {
-    padding-top: 85px;
-  }
-}
 .hero__holder {
   margin: 0 auto;
   text-align: center;
